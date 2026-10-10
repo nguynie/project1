@@ -6,6 +6,17 @@ def isPrime(n):
             return False
         return True
     # Nhận một chuỗi các số nguyên từ người dùng, cách nhau bởi dấu cách
+def bubbleSort(arr):
+    n = len(arr)
+    for i in range(n):
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if not swapped:
+            break  
+    
 input_str = input("Enter a list of numbers separated by space: ")
 # Tách chuỗi thành các chuỗi con và chuyển đổi chúng thành số nguyên
 numbers = [int(num) for num in input_str.split()]
