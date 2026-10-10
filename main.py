@@ -15,7 +15,7 @@ input_str = input("Enter a list of numbers separated by space: ")
 
 # Tách chuỗi thành các chuỗi con và chuyển đổi chúng thành số nguyên
 numbers = [int(num) for num in input_str.split()]
-print("The list of numbers is:", numbers)
+print("The list  of numbers is:", numbers)
 
 # Test hàm isPrime trên số đầu tiên của danh sách nếu có
 if numbers:
